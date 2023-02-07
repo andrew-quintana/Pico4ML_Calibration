@@ -1,0 +1,41 @@
+I. Calibration Pattern Calibration
+  1. Create a calibration pattern
+    - Goals:
+      - generate a chessboard pattern
+      - generate a circleboard pattern
+    - Expanding:
+      - After executing calibrations - design own pattern based on desired tolerances, linearity, etc.
+      - Determine how use cases may change calibration
+    - Resources
+      - https://docs.opencv.org/4.x/da/d0d/tutorial_camera_calibration_pattern.html
+
+  2. Image Based Calibration
+    - Summary:
+      - Compile OpenCV with samples by setting BUILD_EXAMPLES to ON in cmake configuration.
+      - Go to bin folder and use imagelist_creator to create an XML/YAML list of your images.
+      - Then, run calibration sample to get camera parameters. Use square size equal to 3cm.
+      - Repeat wiht sircle size equal to 4cm
+    - Resources:
+      - https://docs.opencv.org/4.x/dc/d43/tutorial_camera_calibration_square_chess.html
+
+  3. Video Based Calibration
+    - Summary:
+      - Determine the distortion matrix
+      - Determine the camera matrix
+      - Take input from Camera, Video and Image file list
+      - Read configuration from XML/YAML file
+      - Save the results into XML/YAML file
+      - Calculate re-projection error
+    - Resources:
+      - https://docs.opencv.org/4.x/d4/d94/tutorial_camera_calibration.html
+      - https://learnopencv.com/camera-calibration-using-opencv/
+    
+II. Geometric-Based Calibration
+III. Deep Learning-Based Calibration
+
+Hardware Resources:
+- Arducam SDK and API for C++ and Python
+  - https://docs.arducam.com/USB-Industrial-Camera/Software-SDK-and-API-for-Windows/Software-SDK-and-API-for-C-C%2B%2B/
+  - https://docs.arducam.com/USB-Industrial-Camera/Software-SDK-and-API-for-Windows/Software-SDK-and-API-for-Python/
+- Arducam GUI: https://docs.arducam.com/USB-Industrial-Camera/Software-SDK-and-API-for-Windows/Graphical%20User-Interface-%28GUI%29-Windows-Program/
+- 
